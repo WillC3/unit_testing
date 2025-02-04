@@ -1,7 +1,13 @@
-from ..extended_utils import get_volume
+from src.extended_utils import get_volume
 import pytest
+from unittest import mock
 
 def test_get_volume():
+    assert get_volume(2, 3, 4) == 24
+
+@mock.patch("src.extended_utils.get_area")
+def test_get_volume_isolated(mock_get_area):
+    mock_get_area.return_value = 6
     assert get_volume(2, 3, 4) == 24
 
 def test_get_volume_with_negative_values():

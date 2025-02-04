@@ -3,7 +3,7 @@
 
 import pytest
 
-from ..calculator import SimpleCalculator
+from src.calculator import SimpleCalculator
 
 
 def test_add_two_numbers():
