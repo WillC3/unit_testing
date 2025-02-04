@@ -1,6 +1,5 @@
-from ..utils import get_area, get_perimeter
-from ..extended_utils import get_surface_area_of_cuboid, get_surface_area_of_sphere
-import pytest
+from src.utils import get_area, get_perimeter
+from src.extended_utils import get_surface_area_of_cuboid, get_surface_area_of_sphere
 
 # Now try writing some of your own tests for get_area and get_perimeter. 
 # Use the functions from part_1.py. Test that get_perimeter & get_volume work as expected.
